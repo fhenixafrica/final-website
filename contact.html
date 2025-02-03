@@ -150,7 +150,7 @@
                   </script>
                   <script type="text/javascript">
                       window.onload = function() {
-                          document.getElementById('fhenix-africa').addEventListener('submit', function(event) {
+                          document.getElementById('fhenix-africa', 'form_name', 'form_lastname', 'form_email').addEventListener('submit', function(event) {
                               event.preventDefault();
                               // these IDs from the previous steps
                               emailjs.sendForm('fhenix_africa', 'fhenix_africa', this)
