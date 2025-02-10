@@ -141,7 +141,6 @@
                 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
                 <script type="text/javascript">
                     (function() {
-                        // https://dashboard.emailjs.com/admin/account
                         emailjs.init({
                           publicKey: "LPLfVxBYsT4fAU2ft",
                         });
@@ -151,12 +150,11 @@
                     window.onload = function() {
                         document.getElementById('fhenix-africa').addEventListener('submit', function(event) {
                             event.preventDefault();
-                            // these IDs from the previous steps
                             emailjs.sendForm('fhenix_africa', 'fhenix_africa', this)
                                 .then(() => {
-                                    window.alert('SUCCESS!');
+                                    document.getElementsByClassName('messages').innerHTML ="Your Message have been sent, Fhenix Africa, will Reply soon";
                                 }, (error) => {
-                                    window.alert('FAILED...', error);
+                                    document.getElementsByClassName('messages', error).innerHTML = "Your Message Fail to Sent";
                                 });
                         });
                     }
