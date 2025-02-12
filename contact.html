@@ -152,9 +152,9 @@
                             event.preventDefault();
                             emailjs.sendForm('fhenix_africa', 'fhenix_africa', this)
                                 .then(() => {
-                                    document.getElementsByClassName('messages').innerHTML ="Your Message have been sent, Fhenix Africa, will Reply soon";
+                                  window.alert('Your Message have been sent!');
                                 }, (error) => {
-                                    document.getElementsByClassName('messages', error).innerHTML = "Your Message Fail to Sent";
+                                  window.alert('FAILED...', error);
                                 });
                         });
                     }
