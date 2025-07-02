@@ -105,6 +105,21 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+    .countdown {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .time {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+    .label {
+      font-size: 1rem;
+      color: #666;
+    }
 
 hr {
   margin: 4.5rem 0;

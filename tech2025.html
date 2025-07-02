@@ -98,9 +98,97 @@
             </nav>
             <!-- /.navbar -->
         </header>
-
-        <p class="col-12 text-center display-3 mt-15">COMING SOON...</p>
     </div>
+
+
+                    
+<div class="countdown" style="height: 50vh; width: 50%; margin: 0 auto;">
+  <h2 class="mb-0">Countdown to <span class="text-primary text-transform">Fhenix Africa</span> Holiday Techcamp 2025</h2>
+  <div class="row g-13">
+    <div class="col-3">
+      <div class="time" id="days">00</div>
+      <div class="label">Days</div>
+    </div>
+    <div class="col-3">
+      <div class="time" id="hours">00</div>
+      <div class="label">Hours</div>
+    </div>
+    <div class="col-3">
+      <div class="time" id="minutes">00</div>
+      <div class="label">Minutes</div>
+    </div>
+    <div class="col-3">
+      <div class="time" id="seconds">00</div>
+      <div class="label">Seconds</div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // 🔧 Change the date below to your target date
+  const countdownDate = new Date("July 28, 2025 10:00:00").getTime();
+
+  function updateCountdown() {
+    const now = new Date().getTime();
+    const distance = countdownDate - now;
+
+    if (distance < 0) {
+      document.querySelector(".countdown").innerHTML = "<h2>The countdown has ended!</h2>";
+      return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("days").textContent = String(days).padStart(2, '0');
+    document.getElementById("hours").textContent = String(hours).padStart(2, '0');
+    document.getElementById("minutes").textContent = String(minutes).padStart(2, '0');
+    document.getElementById("seconds").textContent = String(seconds).padStart(2, '0');
+  }
+
+  setInterval(updateCountdown, 1000);
+  updateCountdown();
+</script>
+
+    <section class="wrapper bg-light">
+    <div class="container py-14 py-md-16">
+    <div class="row gx-md-8 gy-10 align-items-center">
+      <div class="col-lg-6 offset-lg-1 order-lg-2 position-relative">
+        <figure class="rounded"><img class="img-fluid" src="./assets/techcamp2025/techcamp 2025.jpg" srcset="./assets/techcamp2025/techcamp 2025.jpg" alt="" /></figure>
+        <div class="card shadow-lg position-absolute d-none d-md-block" style="top: 15%; left: -7%">
+          <div class="card-body py-4 px-5">
+            <div class="d-flex flex-row align-items-center">
+            </div>
+          </div>
+          <!--/.card-body -->
+        </div>
+        <!--/.card -->
+        <div class="card shadow-lg position-absolute text-center d-none d-md-block" style="bottom: 10%; left: -10%;">
+          <!--/.card-body -->
+        </div>
+        <!--/.card -->
+      </div>
+      <!--/column -->
+      <div class="col-lg-5">
+        <h2 class="fs-16 text-uppercase text-gradient gradient-1 mb-3">What Makes Us Different?</h2>
+        <h3 class="display-4 mb-4 me-lg-n5">We make spending stress free so you have the perfect control.</h3>
+        <p class="mb-6">Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus. Integer posuere erat a ante venenatis dapibus posuere velit.</p>
+        <ul class="icon-list bullet-bg bullet-soft-primary">
+          <li><i class="uil uil-check"></i>Aenean eu leo quam. Pellentesque ornare.</li>
+          <li><i class="uil uil-check"></i>Nullam quis risus eget urna mollis ornare.</li>
+          <li><i class="uil uil-check"></i>Donec id elit non mi porta gravida at eget.</li>
+        </ul>
+      </div>
+      <!--/column -->
+    </div>
+    <!--/.row -->
+  </div>
+  <!-- /.container -->
+</section>
+<!-- /section -->
+
 
     <footer class="bg-dark text-inverse">
         <div class="container pt-17 pt-md-19 pb-13 pb-md-15">
