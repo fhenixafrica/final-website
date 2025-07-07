@@ -121,6 +121,14 @@ body {
       color: #666;
     }
 
+    .dropdown-form {
+      width: 100%;
+      max-width: 500px;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
 hr {
   margin: 4.5rem 0;
   color: rgba(164, 174, 198, 0.2);
