@@ -266,15 +266,7 @@
 
 <script>
 function showLoader() {
-  const loader = document.getElementById('loader');
-  loader.style.display = 'block';
-
-  // Hide loader after 3 seconds
-  setTimeout(() => {
-    loader.style.display = 'none';
-  }, 3000);
-
-  return true; // let the form submit
+  document.getElementById('loader').style.display = 'block';
 }
 </script>
 
